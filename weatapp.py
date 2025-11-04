@@ -1,3 +1,11 @@
+import streamlit as st
+from streamlit_folium import st_folium
+import folium
+import requests
+import pandas as pd
+import altair as alt # 시각화를 위해 altair 추가
+
+# --- 1. 페이지 설정 ---
 st.set_page_config(
     page_title="인터랙티브 날씨 대시보드 🌦️",
     page_icon="☀️",
